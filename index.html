@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Summer Camp Registration</title>
+</head>
+
+<body> 
+
+<center>
+<div class="div-form">
+    <h1>Summer Camp Registration Form</h1>
+    <form id="summerCampRegistration">
+        <div class="div-form-info">
+            <div class="div-form-top">
+                <label class="label-main" for="firstName-input">First Name: </label>
+                <input type="text" name="firstName" id="firstName-input" placeholder="John" required>
+                <br> <br>
+
+                <label class="label-main" for="lastName-input">Last Name: </label>
+                <input type="text" name="lastName" id="lastName-input" placeholder="Johnson" required>
+                <br> <br>
+
+                <label class="label-main" for="under18-checkbox">Under 18 years of age? </label>
+                <input type="checkbox" name="under18" id="under18-checkbox">
+                <br> <br>
+
+                <label class="label-main" for="email-input">Contact Email: </label>
+                <input type="email" name="email" id="email-input" placeholder="jjohnson@email.com" required>
+                <br> <br>
+            </div>
+            <label class="label-main">School Grade: </label>
+            <input type="radio" name="grade" id="below-radio" value="below 9th" checked> <label for="below-radio">Below 9th</label>
+            <input type="radio" name="grade" id="ninth-radio" value="9th"> <label for="ninth-radio">9th</label>
+            <input type="radio" name="grade" id="tenth-radio" value="10th"> <label for="tenth-radio">10th</label>
+            <input type="radio" name="grade" id="eleventh-radio" value="11th"> <label for="eleventh-radio">11th</label>
+            <input type="radio" name="grade" id="twelfth-radio" value="12th"> <label for="twelfth-radio">12th</label>
+            <input type="radio" name="grade" id="above-radio" value="above 12th"> <label for="above-radio">Above 12th</label>
+            <br> <br>
+
+            <div class="div-highschool">
+                <div class="div-highschool-left">
+                    <label class="label-main">High School: </label>
+                </div>
+                <div class="div-highschool-right">
+                    <input type="radio" name="highschool" id="north-radio" value="Bloomington North" checked> <label for="north-radio">Bloomington North High School</label> <br>
+                    <input type="radio" name="highschool" id="south-radio" value="Bloomington South"> <label for="south-radio">Bloomington South High School</label> <br>
+                    <input type="radio" name="highschool" id="other-radio" value="value"> <label for="other-radio">Other:</label> <input type="text" name="highschool" id="highschool-input" disabled> <br>
+                    <input type="radio" name="highschool" id="na-radio" value="N/A"> <label for="na-radio">Not in high school</label>
+                </div>
+            </div>
+        </div> 
+
+        <h2>Session 1</h2>
+        <table>
+            <thead>
+                <th>Time</th>
+                <th>Course 1</th>
+                <th>Course 2</th>
+                <th>Course 3</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr class="form-table-row">
+                    <td>9:00 - 11:00</td>
+                    <td><input type="radio" value="Geometry" name="session1-slot1" id="s1s1c1-radio"><label for="s1s1c1-radio">Geometry</label></td>
+                    <td><input type="radio" value="Intro Chemistry" name="session1-slot1" id="s1s1c2-radio"><label for="s1s1c2-radio">Intro Chemistry</label></td>
+                    <td><input type="radio" value="Brain Science" name="session1-slot1" id="s1s1c3-radio"><label for="s1s1c3-radio">Brain Science</label></td>
+                    <td><input type="radio" value="None" name="session1-slot1" id="s1s1c4-radio" checked><label for="s1s1c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>11:30 - 1:30</td>
+                    <td><input type="radio" value="Intro Biology" name="session1-slot2" id="s1s2c1-radio"><label for="s1s2c1-radio">Intro Biology</label></td>
+                    <td><input type="radio" value="Advanced Chemistry" name="session1-slot2" id="s1s2c2-radio"><label for="s1s2c2-radio">Advanced Chemistry</label></td>
+                    <td><input type="radio" value="Stand. Math Tests Review" name="session1-slot2" id="s1s2c3-radio"><label for="s1s2c3-radio">Stand. Math Tests Review</label></td>
+                    <td><input type="radio" value="None" name="session1-slot2" id="s1s2c4-radio" checked><label for="s1s2c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>1:45 - 3:45</td>
+                    <td><input type="radio" value="Algebra II" name="session1-slot3" id="s1s3c1-radio"><label for="s1s3c1-radio">Algebra II (Virtual)</label></td>
+                    <td><input type="radio" value="Intro Physics" name="session1-slot3" id="s1s3c2-radio"><label for="s1s3c2-radio">Intro Physics</label></td>
+                    <td><input type="radio" value="Psychology" name="session1-slot3" id="s1s3c3-radio"><label for="s1s3c3-radio">Psychology and Why it Matters</label></td>
+                    <td><input type="radio" value="None" name="session1-slot3" id="s1s3c4-radio" checked><label for="s1s3c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>4:00 - 6:00</td>
+                    <td><input type="radio" value="Intro Programming" name="session1-slot4" id="s1s4c1-radio"><label for="s1s4c1-radio">Intro Programming</label></td>
+                    <td><input type="radio" value="Algebra I" name="session1-slot4" id="s1s4c2-radio"><label for="s1s4c2-radio">Algebra I (Virtual)</label></td>
+                    <td><input type="radio" value="Viruses and Our World" name="session1-slot4" id="s1s4c3-radio"><label for="s1s4c3-radio">Viruses and Our World</label></td>
+                    <td><input type="radio" value="None" name="session1-slot4" id="s1s4c4-radio" checked><label for="s1s4c4-radio">None</label></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Session 2</h2>
+        <table>
+            <thead>
+                <th>Time</th>
+                <th>Course 1</th>
+                <th>Course 2</th>
+                <th>Course 3</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 11:00</td>
+                    <td><input type="radio" value="Algebra I" name="session2-slot1" id="s2s1c1-radio"><label for="s2s1c1-radio">Algebra I</label></td>
+                    <td><input type="radio" value="Intro Physics" name="session2-slot1" id="s2s1c2-radio"><label for="s2s1c2-radio">Intro Physics</label></td>
+                    <td><input type="radio" value="Zoology" name="session2-slot1" id="s2s1c3-radio"><label for="s2s1c3-radio">Zoology</label></td>
+                    <td><input type="radio" value="None" name="session2-slot1" id="s2s1c4-radio" checked><label for="s2s1c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>11:30 - 1:30</td>
+                    <td><input type="radio" value="Intro Programming" name="session2-slot2" id="s2s2c1-radio"><label for="s2s2c1-radio">Intro Programming</label></td>
+                    <td><input type="radio" value="Algebra II" name="session2-slot2" id="s2s2c2-radio"><label for="s2s2c2-radio">Algebra II</label></td>
+                    <td><input type="radio" value="Astronomy" name="session2-slot2" id="s2s2c3-radio"><label for="s2s2c3-radio">Astronomy</label></td>
+                    <td><input type="radio" value="None" name="session2-slot2" id="s2s2c4-radio" checked><label for="s2s2c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>1:45 - 3:45</td>
+                    <td><input type="radio" value="Intro Biology" name="session2-slot3" id="s2s3c1-radio"><label for="s2s3c1-radio">Intro Biology</label></td>
+                    <td><input type="radio" value="Advanced Chemistry" name="session2-slot3" id="s2s3c2-radio"><label for="s2s3c2-radio">Advanced Chemistry</label></td>
+                    <td><input type="radio" value="Pre-Calculus" name="session2-slot3" id="s2s3c3-radio"><label for="s2s3c3-radio">Pre-Calculus</label></td>
+                    <td><input type="radio" value="None" name="session2-slot3" id="s2s3c4-radio" checked><label for="s2s3c4-radio">None</label></td>
+                </tr>
+                <tr>
+                    <td>4:00 - 6:00</td>
+                    <td><input type="radio" value="Stand. Math Tests Review" name="session2-slot4" id="s2s4c1-radio"><label for="s2s4c1-radio">Stand. Math Tests Review</label></td>
+                    <td><input type="radio" value="Intro Chemistry" name="session2-slot4" id="s2s4c2-radio"><label for="s2s4c2-radio">Intro Chemistry</label></td>
+                    <td>-</td>
+                    <td><input type="radio" value="None" name="session2-slot4" id="s2s4c4-radio" checked><label for="s2s4c4-radio">None</label></td>
+                </tr>
+            </tbody>
+        </table>
+        <br> <br>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<br> <br>
+
+<div class="div-registrar">
+    <h1>Summer Camp Registrar</h1>
+    <label class="label-main" for="search">Search Course: </label>
+    <input type="text" id="search-input" placeholder="course name">
+    <button id="search-button">Search</button>
+    <button id="reset-button">Reset</button> 
+    <label class="label-main" id="registrar-stat"></label>
+
+    <br> <br>
+
+    <table id="registrar-table">
+        <thead>
+            <th>Name</th>
+            <th>Under 18?</th>
+            <th>Email</th>
+            <th>Registration Time</th>
+            <th>Grade</th>
+            <th>High School</th>
+            <th>Session 1</th>
+            <th>Session 2</th>
+        </thead>
+        <tbody id="registrar-body"></tbody>
+    </table>
+</div>
+</center>
+
+<script type="text/json" src="./index.json"></script>
+<script src="index.js"></script>
+</body>
+
+
+
+</html>
